@@ -39,7 +39,7 @@ const App4 = () => {
             <div>
                 <h1>Comments: {comments.data.length} </h1>
                 {comments.loading && <h3>loading...</h3>}
-                {comments.error && <h3> comments.error</h3>}
+                {comments.error && <h3> {comments.error}</h3>}
                 {comments.data?.map((comment) => (
                     <li key={comment.id}> {comment.email}</li>
                 ))}
